@@ -1,0 +1,221 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Frutiger Standard Bold';
+    src: url('/media/fonts/FrutigerLTStd-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro Regular';
+    src:  url('/media/fonts/AGaramondPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+ 
+ /*  Video Carousel 
+---------------------------------------------------*/
+html,
+body {
+  height: 100%;
+}
+.carousel {
+  width: 100%;
+  height: 70%;
+  background-color: #000;
+}
+.carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-fade .carousel-control .glyphicon {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+.stopfade {
+  opacity: 0.5;
+}
+.slide-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+.slide-content video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+.slide-content video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+.door {
+  height: 100%;
+  z-index: 1;
+}
+
+.door .title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'Adobe Garamond Pro', serif;
+  letter-spacing: 0.3rem;
+}
+.door .description h1 {
+  margin-top: 15px;
+  font-size: 90px;
+  font-family: 'Adobe Garamond Pro', serif;
+}
+
+.door .description h2 {
+    font-size: 48px;
+    font-style: italic;
+    font-family: 'Adobe Garamond Pro', serif;
+}
+
+
+       
+
+.navbar .container {
+    border-bottom: 1px solid #
+}
+
+.navbar ul {
+  float: left;  
+  margin-top: 50px;
+  width: 40%;
+    display: table;
+}
+
+.navbar ul li {
+    float: left; 
+    list-style-type:none; 
+    vertical-align: middle;
+    text-align: center;
+    width: 30%;
+    height: 50px;
+    display: table-cell;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    line-height: normal;
+    display: inline-block;
+    font-family: 'Frutiger Standard Bold', sans-serif;
+}
+
+.navbar-form h2 {
+    font-size: 20px;
+    font-family: 'Adobe Garamond Pro', serif;
+    color: #fff;
+    font-style: italic;
+    margin-top:0px;
+}
+
+.navbar-form .form-control {
+    background-color: transparent;
+    border: none;
+    border-radius:0px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.fac-filter-container {
+    background-color: #0D1D34;
+    height: 82px;
+    margin-bottom: 30px;
+}
+
+ul.fac-filters { width: 100%; }
+ul.fac-filters li {
+    padding: 30px;
+    color:#fff;
+    font-size: 14px;
+    border-right: 1px solid rgb(255, 0, 0);
+    border-right: 1px solid rgba(255, 0, 0, .2);
+    font-family: 'Frutiger Standard Bold', sans-serif;
+}
+
+ul.fac-filters li img { margin-right: 15px;}
+
+.dropdown-toggle {
+    cursor:pointer;
+}
+
+
+.call-cta {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Adobe Garamond Pro', serif;
+    color: #777
+}
+
+
+
+.btf-content .container {
+    background-color:#fff;
+}
+
+footer {
+    border-top: 1px solid #979797;
+    background-color: #F7F7F7;
+    min-height: 200px;
+}
+
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+
+
+
+
