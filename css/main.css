@@ -6,14 +6,14 @@
 
 @font-face {
     font-family: 'Frutiger Standard Bold';
-    src: url('/media/fonts/FrutigerLTStd-Bold.otf') format('opentype');
+    src: url('../media/fonts/FrutigerLTStd-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Adobe Garamond Pro Regular';
-    src:  url('/media/fonts/AGaramondPro-Regular.otf') format('opentype');
+    src:  url('../media/fonts/AGaramondPro-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -93,6 +93,8 @@ body {
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
 }
+
+
 .slide-content video::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none;
@@ -121,7 +123,17 @@ body {
 }
 
 
-       
+/* Animation delays */
+.slide-overlay .title {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.slide-overlay .description h1, .slide-overlay .description h2 {
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+
 
 .navbar .container {
     border-bottom: 1px solid #
@@ -185,6 +197,8 @@ ul.fac-filters li {
 }
 
 ul.fac-filters li img { margin-right: 15px;}
+
+ul.dropdown-menu li { padding:0px; margin: 10px 0; font-weight: bold; }
 
 .dropdown-toggle {
     cursor:pointer;
