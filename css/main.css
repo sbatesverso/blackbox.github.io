@@ -101,7 +101,7 @@ body {
 }
 .door {
   height: 100%;
-    with:80%!important;
+    width:80%!important;  
     margin:0 auto;
   z-index: 1;
 }
@@ -119,11 +119,18 @@ body {
 }
 
 .door .description h2 {
-    font-size: 48px;
+    font-size: 38px;
     font-style: italic;
     font-family: 'Adobe Garamond Pro', serif;
 }
 
+.door .description a {
+     font-style: italic;
+    font-family: 'Adobe Garamond Pro', serif;
+    font-size: 24px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+}
 
 /* Animation delays */
 .slide-overlay .title {
